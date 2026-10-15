@@ -581,3 +581,28 @@ function initCVDownload() {
     });
   });
 }
+<<<<<<< HEAD
+=======
+
+
+/* Auto-fit the hero name so it never clips or wraps, whatever font loads */
+function fitHeroNames() {
+  const stack = document.querySelector(".hero-stack");
+  const names = document.querySelectorAll(".hero-name-top, .hero-name-bottom");
+  if (!stack || !names.length) return;
+  names.forEach((el) => { el.style.fontSize = ""; });
+  const avail = stack.clientWidth;
+  names.forEach((el) => {
+    const range = document.createRange();
+    range.selectNodeContents(el);
+    const w = range.getBoundingClientRect().width;
+    if (w > avail) {
+      const cur = parseFloat(getComputedStyle(el).fontSize);
+      el.style.fontSize = Math.floor(cur * (avail / w) * 0.98 * 10) / 10 + "px";
+    }
+  });
+}
+window.addEventListener("load", fitHeroNames);
+window.addEventListener("resize", fitHeroNames);
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitHeroNames);
+>>>>>>> b11efc2 (Update project files)
