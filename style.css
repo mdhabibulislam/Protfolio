@@ -952,8 +952,6 @@ h1, h2, h3 {
 }
 .back-to-top.is-visible { opacity: 1; visibility: visible; transform: translateY(0); }
 .back-to-top svg { width: 18px; height: 18px; }
-<<<<<<< HEAD
-=======
 
 
 /* Mobile overflow guard: long email / contact values must wrap, not widen the page */
@@ -964,4 +962,3 @@ h1, h2, h3 {
   .booking-row { flex-wrap: wrap; gap: 0.25rem 1rem; }
   .btn-on-coral { font-size: 0.85rem; padding-inline: 1.1rem; }
 }
->>>>>>> b11efc2 (Update project files)

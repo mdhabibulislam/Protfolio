@@ -581,8 +581,6 @@ function initCVDownload() {
     });
   });
 }
-<<<<<<< HEAD
-=======
 
 
 /* Auto-fit the hero name so it never clips or wraps, whatever font loads */
@@ -605,4 +603,3 @@ function fitHeroNames() {
 window.addEventListener("load", fitHeroNames);
 window.addEventListener("resize", fitHeroNames);
 if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitHeroNames);
->>>>>>> b11efc2 (Update project files)
