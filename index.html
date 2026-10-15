@@ -30,7 +30,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -46,8 +46,8 @@
       <nav>
         <ul class="nav-links">
           <li><a href="#work" data-nav>Work</a></li>
+          <li><a href="#vibe" data-nav>Vibe Coding</a></li>
           <li><a href="#research" data-nav>Research</a></li>
-          <li><a href="#writing" data-nav>Writing</a></li>
           <li><a href="#about" data-nav>About</a></li>
         </ul>
       </nav>
@@ -64,8 +64,8 @@
 <!-- Mobile full-screen menu -->
 <nav class="mobile-menu" id="mobileMenu">
   <a href="#work" data-nav>Work</a>
+  <a href="#vibe" data-nav>Vibe Coding</a>
   <a href="#research" data-nav>Research</a>
-  <a href="#writing" data-nav>Writing</a>
   <a href="#about" data-nav>About</a>
   <a href="#education" data-nav>Education</a>
   <a href="#certifications" data-nav>Certifications</a>
@@ -150,21 +150,44 @@
     </div>
   </div>
 
-  <!-- ================= NUMBERS ================= -->
-  <section class="section section-alt" id="numbers">
-    <div class="container">
-      <div class="numbers-grid" id="numbersGrid"></div>
-    </div>
-  </section>
-
-  <!-- ================= WRITING (PUBLICATIONS) ================= -->
-  <section class="section" id="writing">
+  <!-- ================= VIBE CODING ================= -->
+  <section class="section" id="vibe">
     <div class="container">
       <div class="section-head reveal">
-        <span class="label">Writing</span>
-        <h2>Published &amp; in <em>preparation</em>.</h2>
+        <span class="label">Vibe coding</span>
+        <h2>Ideas I <em>shipped</em>.</h2>
       </div>
-      <div class="writing-list" id="writingList"></div>
+
+      <a class="vibe-featured reveal" href="https://moneypilot-delta.vercel.app/welcome" target="_blank" rel="noopener">
+        <div class="vibe-featured-main">
+          <span class="vibe-badge">Featured</span>
+          <h3>MoneyPilot</h3>
+          <p class="vibe-tagline">Personal finance tracking &amp; future planner</p>
+          <p class="vibe-desc">A "Personal Finance OS" built on one idea: <em>save first, spend the rest.</em> Plan your salary day, track every expense, work through debt step by step, and build goals and an emergency fund.</p>
+          <span class="vibe-cta">Open live app <span aria-hidden="true">&rarr;</span></span>
+        </div>
+        <ul class="vibe-pillars" aria-label="MoneyPilot features">
+          <li><span class="v-n">01</span><strong>Plan</strong><span>Salary-day plans</span></li>
+          <li><span class="v-n">02</span><strong>Track</strong><span>Every expense</span></li>
+          <li><span class="v-n">03</span><strong>Repay</strong><span>Debt, step by step</span></li>
+          <li><span class="v-n">04</span><strong>Save</strong><span>Goals &amp; emergency fund</span></li>
+        </ul>
+      </a>
+
+      <div class="vibe-grid">
+        <a class="vibe-card reveal" href="https://acslperformance.vercel.app/" target="_blank" rel="noopener">
+          <span class="label">Web app &middot; Anwar Cement Sheet</span>
+          <h3>Carpenter Loyalty Program</h3>
+          <p>A loyalty program portal for carpenters. Each carpenter signs in with a personal login code that opens only their own area report.</p>
+          <span class="vibe-cta">Open live site <span aria-hidden="true">&rarr;</span></span>
+        </a>
+        <a class="vibe-card reveal" href="https://mdhabibulislam0.vercel.app/" target="_blank" rel="noopener">
+          <span class="label">Website &middot; Personal</span>
+          <h3>This Portfolio</h3>
+          <p>The site you are on: a static portfolio built with plain HTML, CSS and JavaScript, covering my analytics work, research and certifications.</p>
+          <span class="vibe-cta">Open live site <span aria-hidden="true">&rarr;</span></span>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -226,6 +249,10 @@
         <div class="pipeline-step"><span class="p-n">04</span><div class="p-l">Analysis</div></div>
         <div class="pipeline-step"><span class="p-n">05</span><div class="p-l">Findings</div></div>
         <div class="pipeline-step"><span class="p-n">06</span><div class="p-l">Publication</div></div>
+      </div>
+      <div class="research-pubs">
+        <span class="label" style="display:block; margin:3rem 0 1.25rem;">Publications</span>
+        <div class="writing-list" id="writingList"></div>
       </div>
     </div>
   </section>

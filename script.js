@@ -523,7 +523,6 @@ document.addEventListener("DOMContentLoaded", () => {
   renderSocialLinks();
   renderWork();
   renderProjects();
-  renderNumbers();
   renderWriting();
   renderEducation();
   renderSkills();
